@@ -1,3 +1,30 @@
 @use "../../styles/partials/typography" as *;
 @use "../../styles/partials/variables" as *;
 @use "../../styles/partials/mixins" as *;
+
+.home {
+  margin-top: -0.5rem;
+  position: relative;
+  z-index: 0; 
+  height: 100vh; 
+  overflow: hidden; 
+
+  .home__hero {
+    position: relative;
+    height: 100%; 
+    width: 100%;
+    overflow: hidden;
+  }
+  img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+  &.overlay {
+    @include overlay(rgba(0, 0, 0, 0.5), 0.7);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+}

@@ -9,9 +9,11 @@
   }
   &__navbar {
     height: 5rem;
+    width: 100%;
     display: flex;
     padding-top: 0.7rem;
     justify-content: flex-end;
+    align-items: flex-start;
     background-color: $gG-lightBeige;
   }
   &__navOptionEl {
@@ -19,7 +21,7 @@
     padding: 0.3rem;
     padding-top: 0.5rem;
     border-radius: 30%;
-    margin-right: 1.5rem;
+    margin-right: 1.7rem;
     margin-top: 0.8rem;
   }
 }
