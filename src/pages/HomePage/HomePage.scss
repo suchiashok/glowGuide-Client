@@ -9,22 +9,25 @@
   height: 100vh; 
   overflow: hidden; 
 
-  .home__hero {
-    position: relative;
+  &__hero {
+    background-image: url(../../assets/images/hero.jpg);
+    background-size: cover;
+    background-position: center;
     height: 100%; 
     width: 100%;
     overflow: hidden;
-  }
-  img {
-    height: auto;
-    width: 100%;
-    object-fit: cover;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
   }
+
+  &__swiper {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+
   &.overlay {
     @include overlay(rgba(0, 0, 0, 0.5), 0.7);
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
   }
+
 }

@@ -1,0 +1,97 @@
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+::-webkit-scrollbar {
+  width: 1.3rem;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background: #797979;
+  transition: all 0.5s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #222224;
+}
+
+::-webkit-scrollbar-track {
+  background: #f9f9f9;
+}
+
+.container {
+  max-width: 50rem;
+  padding: 4rem 1rem;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+
+  &__title {
+    font-family: $font-header;
+    color: $gG-blue;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    @include tablet {
+      font-size: 1.9rem;
+    }
+  }
+  &__swiperCon {
+    height: 20rem;
+    width: 80%;
+    position: relative;
+  }
+  &__swiperEach {
+    background-color: $gG-lightBeige;
+    opacity: 75%;
+    border: 1px solid $gG-beige;
+    position: absolute;
+    border-radius: 1rem;
+    box-shadow: inset;
+    &.swiper-slide:not(.swiper-slide-active) {
+      filter: blur(5px);
+    }
+  }
+  &__swiperContent {
+    font-family: $font-body;
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 7rem;
+    left: 4rem;
+    right: 4rem;
+    bottom: 7rem;
+    justify-content: center;
+  }
+  &__links {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+@media (max-width: 500px) {
+  .container__swiperCon {
+    height: 47rem;
+  }
+  .swiper-slide {
+    width: 28rem !important;
+    height: 36rem !important;
+  }
+}
+
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+  display: none;
+}

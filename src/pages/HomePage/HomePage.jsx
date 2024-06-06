@@ -1,18 +1,17 @@
 import "./HomePage.scss";
 import Header from "../Header/Header";
-import SwiperSlider from "../../components/SwiperSlider/SwiperSlider"
+import SwiperComp from "../../components/SwiperComp/SwiperComp";
 
 function HomePage() {
   return (
     <>
       <Header />
-      <div className="home overlay">
-        <img
-          className="home_hero"
-          src="src/assets/images/hero.jpg"
-          alt="hero"
-        ></img>
-        <SwiperSlider />
+      <div className="home">
+        <div className="home__hero">
+          <div className="home__swiper">
+            <SwiperComp />
+          </div>
+        </div>
       </div>
     </>
   );
