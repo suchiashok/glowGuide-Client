@@ -1,5 +1,5 @@
 import "./HomePage.scss";
-import Header from "../Header/Header";
+import Header from "../../components/Header/Header"
 import SwiperComp from "../../components/SwiperComp/SwiperComp";
 
 function HomePage() {

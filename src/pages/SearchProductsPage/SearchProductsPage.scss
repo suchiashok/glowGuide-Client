@@ -1,3 +1,114 @@
 @use "../../styles/partials/typography" as *;
 @use "../../styles/partials/variables" as *;
 @use "../../styles/partials/mixins" as *;
+
+.main {
+  @include fit;
+  margin-top: -0.5rem;
+  position: relative;
+  z-index: 0;
+  height: 100%;
+  background-color: $gG-lightBeige;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  @include fit;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
+}
+.card {
+  img {
+    height: 1.1rem;
+    width: 1.1rem;
+  }
+  padding: 1.2rem;
+  padding-right: 0;
+  font-family: $font-body;
+  background-color: white;
+  margin-bottom: 2rem;
+  color: $gG-blue;
+  border-radius: 1rem;
+  width: 55%;
+
+  &:hover,
+  &.selected {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+
+  &__brandValue {
+    font-size: 0.9rem;
+    font-style: italic;
+  }
+  &__content, &__categoryContent {
+    padding-top: 0.7rem;
+    display: flex;
+    gap: 0.3rem;
+    font-family: "ApercuMedium";
+    font-size: 0.9rem;
+    width: 70%;
+  }
+  
+  &__last {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__button {
+    border-radius: 0.8rem;
+    width: 80%;
+    height: 1.6rem;
+    background-color: transparent;
+    border: 1px solid $gG-blue;
+    font-size: 0.7rem;
+    margin-top: 0.5rem;
+    &:hover,
+    &.selected {
+      transform: scale(1.05);
+      color: white;
+      background-color: $gG-blue;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+    }
+  }
+  &__buttonEl {
+    width: 14rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  &__buttonIcon img {
+    flex-grow: 1;
+  }
+  &__buttonIcon {
+    margin-top: 0.5rem;
+  }
+}
+.categories {
+    display: flex;
+    gap: 1rem;
+    &__button {
+        border-radius: 0.8rem;
+    width: 8rem;
+    height: 1.6rem;
+    background-color: transparent;
+    border: none;
+    font-size: 0.7rem;
+    margin-top: 0.5rem;
+    &:hover,
+    &.selected {
+      transform: scale(1.05);
+      color: white;
+      background-color: $gG-blue;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+    }
+    }
+}

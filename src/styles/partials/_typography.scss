@@ -1,11 +1,20 @@
 @font-face {
     font-family: "Prata";
-    src: url("../assets/fonts/Prata-Regular.ttf") format("truetype");
+    src: url("../../assets/fonts/Prata-Regular.ttf") format("truetype");
     font-weight: 400;
   }
   @font-face {
     font-family: "Apercu";
-    src: url("../assets/fonts/Apercu_Regular.otf") format("opentype");
+    src: url("../../assets/fonts/Apercu\ Regular.otf") format("truetype");
     font-weight: 400;
   }
- 
+  @font-face {
+    font-family: "ApercuPro";
+    src: url("../../assets/fonts/Apercu\ Pro\ Regular.otf") format("truetype");
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: "ApercuMedium";
+    src: url("../../assets/fonts/Apercu\ Medium.otf") format("truetype");
+    font-weight: 400;
+  }

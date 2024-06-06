@@ -5,7 +5,7 @@ function Header() {
   return (
     <header className="header">
       <div className="header__navbar">
-        <NavLink to="/" className="header__navOptionLink">
+        <NavLink to="/home" className="header__navOptionLink">
           <div className="header__navOptionEl">
             <img
               className="navbar__navOption"

@@ -1,0 +1,27 @@
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.header {
+  img {
+    height: 1.3rem;
+    width: 1.3rem;
+  }
+  &__navbar {
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    padding-top: 0.7rem;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background-color: white;
+  }
+  &__navOptionEl {
+    background-color: $gG-lightBeige;
+    padding: 0.3rem;
+    padding-top: 0.5rem;
+    border-radius: 30%;
+    margin-right: 1.7rem;
+    margin-top: 0.8rem;
+  }
+}
