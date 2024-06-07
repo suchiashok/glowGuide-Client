@@ -18,7 +18,7 @@ function Header() {
           <div className="header__navOptionEl">
             <img
               className="navbar__navOption"
-              src="src/assets/icons/heart.png"
+              src="src/assets/icons/heart.svg"
               alt="wishlist"
             ></img>
           </div>
