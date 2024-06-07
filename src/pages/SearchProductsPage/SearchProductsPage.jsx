@@ -41,8 +41,10 @@ function SearchProductsPage() {
     setSelectedCategory(category);
     if (category === "all") {
       getAllProducts();
+      navigate("/products");
     } else {
       getProductsByCategory(category);
+      navigate(`/products/category/${category}`);
     }
   };
 
@@ -161,6 +163,117 @@ function SearchProductsPage() {
                   connect with and care for yourself. Prioritizing skincare
                   today paves the way for a healthier, more luminous complexion
                   in the future.
+                </p>
+              </div>
+            </div>
+          )}
+          {selectedCategory === "Toner" && (
+            <div className="aboutContainer">
+              <div className="aboutContainer__content">
+                <h4 className="aboutContainer__title">
+                  Why Toner is Essential for Your Skincare Routine
+                </h4>
+                <p className="aboutContainer__para">
+                  Unlock the secret to a flawless complexion with the power of
+                  toner. Often the unsung hero of skincare, toner plays a
+                  pivotal role in purifying, balancing, and revitalizing your
+                  skin. It sweeps away lingering impurities and excess oil,
+                  ensuring your skin is perfectly prepped to absorb the goodness
+                  of your serums and moisturizers.
+                  <br />
+                  <br />
+                  More than just a cleanser's sidekick, toner helps maintain
+                  your skin's optimal pH balance, tightens pores, and delivers a
+                  burst of hydration. Incorporate toner into your daily regimen
+                  and experience the transformative effects on your skin's
+                  texture and clarity.
+                  <br />
+                  <br />
+                  Elevate your skincare game with glowGuide's expert-picked
+                  toners, designed to give you that enviable, healthy glow.
+                </p>
+              </div>
+            </div>
+          )}
+          {selectedCategory === "Serum" && (
+            <div className="aboutContainer">
+              <div className="aboutContainer__content">
+                <h4 className="aboutContainer__title">The Power of Serum</h4>
+                <p className="aboutContainer__para">
+                  Transform your skincare routine with the magic of serums, the
+                  powerhouse of potent ingredients designed to target specific
+                  skin concerns. Serums penetrate deep into the skin, delivering
+                  concentrated doses of vitamins, antioxidants, and essential
+                  nutrients where they're needed most. Whether you're combating
+                  fine lines, uneven skin tone, or hydration issues, there's a
+                  serum tailored for you.
+                  <br />
+                  <br />
+                  These lightweight elixirs work wonders in boosting collagen
+                  production, enhancing skin elasticity, and providing a
+                  radiant, youthful glow. Make serums a staple in your daily
+                  regimen and let glowGuide's expert recommendations help you
+                  achieve your best skin ever.
+                  <br />
+                  <br />
+                  Unleash the true potential of your skincare with the
+                  transformative effects of serums.
+                </p>
+              </div>
+            </div>
+          )}
+          {selectedCategory === "Moisturizer" && (
+            <div className="aboutContainer">
+              <div className="aboutContainer__content">
+                <h4 className="aboutContainer__title">
+                  Embrace Hydration: The Vital Role of Moisturizer
+                </h4>
+                <p className="aboutContainer__para">
+                  Hydration is the key to a healthy, radiant complexion, and
+                  your moisturizer is the ultimate hydration hero. More than
+                  just a skincare staple, moisturizer seals in moisture,
+                  replenishes vital nutrients, and fortifies your skin's natural
+                  barrier. From lightweight lotions to rich creams, there's a
+                  moisturizer suited for every skin type and concern.
+                  <br />
+                  <br />
+                  Nourish your skin with a surge of hydration, banish dryness,
+                  and restore suppleness for a soft, smooth complexion. Elevate
+                  your skincare ritual with glowGuide's curated selection of
+                  moisturizers, crafted to quench your skin's thirst and unveil
+                  its luminous beauty.
+                  <br />
+                  <br />
+                  Experience the transformative power of moisturizer and embrace
+                  radiant, healthy skin every day.
+                </p>
+              </div>
+            </div>
+          )}
+          {selectedCategory === "Sunscreen" && (
+            <div className="aboutContainer">
+              <div className="aboutContainer__content">
+                <h4 className="aboutContainer__title">
+                  Sunscreen: Your Shield Against Sun Damage
+                </h4>
+                <p className="aboutContainer__para">
+                  Protecting your skin from harmful UV rays is non-negotiable,
+                  and sunscreen is your ultimate defense. More than just a
+                  summertime essential, sunscreen is a year-round necessity to
+                  prevent premature aging, sunburns, and skin cancer. Shield
+                  your skin from the sun's damaging effects with a
+                  broad-spectrum sunscreen that blocks both UVA and UVB rays.
+                  <br />
+                  <br />
+                  Lightweight and non-greasy formulas make daily application a
+                  breeze, ensuring your skin stays protected without clogging
+                  pores or leaving a white cast. Embrace sun-kissed adventures
+                  with confidence, knowing glowGuide's curated collection of
+                  sunscreens has you covered.
+                  <br />
+                  <br />
+                  Make sunscreen a non-negotiable step in your skincare routine
+                  and safeguard your skin's health for years to come.
                 </p>
               </div>
             </div>
