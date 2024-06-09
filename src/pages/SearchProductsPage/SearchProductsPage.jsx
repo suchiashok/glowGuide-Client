@@ -27,10 +27,8 @@ function SearchProductsPage() {
   const getProductsByCategory = async (category) => {
     try {
       const res = await axios.get(`${baseUrl}/products/category/${category}`);
-      console.log(res);
       const shuffleProducts = res.data.sort(() => Math.random() - 0.5);
       setProducts(shuffleProducts);
-      console.log(shuffleProducts);
     } catch (error) {
       console.log("Something went wrong!" + error);
     }

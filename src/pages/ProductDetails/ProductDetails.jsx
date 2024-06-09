@@ -8,6 +8,7 @@ import addProduct from "../../assets/icons/addProduct.png";
 function ProductDetails() {
   const { id } = useParams();
   const [product, setProduct] = useState(null);
+  const [userProduct, setUserProduct] = useState(null);
   const baseUrl = import.meta.env.VITE_BASE_URL;
 
   const getProductDetails = async () => {
@@ -16,6 +17,20 @@ function ProductDetails() {
       setProduct(response.data);
     } catch (error) {
       console.log("Something went wrong" + error);
+    }
+  };
+
+  const postUserProducts = async () => {
+    try {
+      const data = {
+        productId: id,
+        openDate: null,
+        expirationMonths: null,
+      };
+      const response = await axios.post(`${baseUrl}/userProducts`, data);
+      setUserProduct(response.data);
+    } catch (error) {
+      console.log("Something went wrong!" + error);
     }
   };
 
@@ -31,7 +46,7 @@ function ProductDetails() {
     <>
       <Header />
       <section class="indProduct">
-        <button className="indProduct__button">
+        <button className="indProduct__button" onClick={postUserProducts}>
           Got this? Add to your Collection!
           <img
             className="indProduct__buttonIcon"
@@ -95,6 +110,26 @@ function ProductDetails() {
           </div>
         </div>
       </section>
+      <section className="buyNow">
+        <div className="buyNow__title">
+          <h4>Wanna add to your collection? Buy Now!</h4>
+        </div>
+        <div className="buyNow__buttons">
+          <a href={product.sephora} target="_blank" rel="noopener noreferrer">
+            <button className="buyNow__sephora"></button>
+          </a>
+          <div className="buyNow__divider"></div>
+          <a
+            href={product.brand_link}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="buyNow__brand">
+              {product.brand.toUpperCase()}
+            </button>
+          </a>
+        </div>
+      </section>
       <section className="sizesEl">
         <div className="sizesEl__container">
           <div className="sizesEl__text">
@@ -108,15 +143,17 @@ function ProductDetails() {
             <p className="sizesEl__subHeading">Small</p>
             <p className="sizesEl__sizeContent">
               For those seeking a compact option, consider the Small (S) size,
-              typically ranging from 0.5oz to 2oz (15ml to 60ml), perfect for
-              individuals who prefer to switch up their products frequently or
-              those who travel often.
+              <br />
+              typically ranging from 0.5oz to 2oz (15ml to 60ml), <br />
+              perfect for individuals who prefer to switch up their products
+              frequently or those who travel often.
             </p>
             <p className="sizesEl__subHeading">Medium</p>
             <p className="sizesEl__sizeContent">
               If you're looking for a bit more product to last you a while, the
-              Medium (M) size, which usually falls between 2oz to 6oz (60ml to
-              180ml), might be just right for daily use over several weeks.
+              Medium (M) size,
+              <br /> which usually falls between 2oz to 6oz (60ml to 180ml),{" "}
+              <br /> might be just right for daily use over several weeks.
             </p>
             <p className="sizesEl__subHeading">Large</p>
             <p className="sizesEl__sizeContent">
@@ -127,9 +164,9 @@ function ProductDetails() {
             </p>
             <p className="sizesEl__subHeading">Standard</p>
             <p className="sizesEl__sizeContent">
-              And if you prefer the standard options, look for sizes between 1oz
-              to 3.4oz (30ml to 100ml), providing a balance between value and
-              convenience for regular use.
+              And if you prefer the standard options, <br /> look for sizes
+              between 1oz to 3.4oz (30ml to 100ml), <br /> providing a balance
+              between value and convenience for regular use.
             </p>
           </div>
         </div>
