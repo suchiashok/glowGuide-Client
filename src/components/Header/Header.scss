@@ -3,15 +3,28 @@
 @use "../../styles/partials/mixins" as *;
 
 .header {
+  display: flex;
   img {
-    height: 1.3rem;
-    width: 1.3rem;
+    height: 12rem;
+    width: 12rem;
+    background-color: none;
+  }
+  &__logo {
+    margin-left: 1.3rem;
+    z-index:-2;
+  }
+  &__navOptionEl {
+    img {
+      height: 1.3rem;
+      width: 1.3rem;
+    }
   }
   &__navbar {
     height: 5rem;
     width: 100%;
     display: flex;
-    padding-top: 0.7rem;
+    margin-top: 0.5rem;
+    padding-top: 0.8rem;
     justify-content: flex-end;
     align-items: flex-start;
     background-color: $gG-lightBeige;

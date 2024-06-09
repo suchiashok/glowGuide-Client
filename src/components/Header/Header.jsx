@@ -1,15 +1,19 @@
 import "./Header.scss";
 import { NavLink } from "react-router-dom";
+import Heart from "../../assets/icons/heart.svg";
+import homeIcon from "../../assets/icons/home.png"
+import logo from "../../assets/icons/glowGuide-logo.svg";
 
 function Header() {
   return (
     <header className="header">
+       <img className="header__logo" src={logo}></img>
       <div className="header__navbar">
         <NavLink to="/home" className="header__navOptionLink">
           <div className="header__navOptionEl">
             <img
               className="navbar__navOption"
-              src="src/assets/icons/home.png"
+              src={homeIcon}
               alt="home"
             ></img>
           </div>
@@ -18,7 +22,7 @@ function Header() {
           <div className="header__navOptionEl">
             <img
               className="navbar__navOption"
-              src="src/assets/icons/heart.svg"
+              src={Heart}
               alt="wishlist"
             ></img>
           </div>

@@ -1,3 +1,243 @@
 @use "../../styles/partials/typography" as *;
 @use "../../styles/partials/variables" as *;
 @use "../../styles/partials/mixins" as *;
+
+.indProduct {
+  margin-top: -5.5rem;
+  z-index: 0;
+  height: 100vh;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  padding-left: 3rem;
+  padding-top: 4rem;
+  background-color: $gG-beige;
+
+  &__section1 {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__container {
+    position: relative;
+    width: 50%;
+    font-family: "ApercuMedium";
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &::before {
+      content: "";
+      background-image: url(../../assets/images/indProduct_bg.avif);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 0.6;
+      border-top-right-radius: 8rem;
+      border-bottom-left-radius: 8rem;
+      z-index: 0;
+    }
+  }
+  &__indContainer {
+    position: relative;
+    z-index: 1;
+    padding: 1.25rem;
+    color: $gG-blue;
+    font-size: 1rem;
+    color: $gG-blue;
+    flex-grow: 1;
+    border: 2px solid burlywood;
+    border-top-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    margin-bottom: 1.2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(1px);
+  }
+  &__sizes {
+    display: flex;
+    gap: 1.6rem;
+  }
+  &__button {
+    background-color: $gG-pink;
+    border-color: transparent;
+    margin-bottom: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    padding: 0.5rem;
+    font-family: "ApercuMedium";
+    font-size: 1rem;
+  }
+  &__buttonIcon {
+    height: 0.9rem;
+    width: 0.9rem;
+    margin-left: 0.4rem;
+  }
+
+  &__button:hover {
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.2);
+  }
+  &__categoryImage {
+    width: 25%;
+    height: fit-content;
+    position: relative;
+    padding: 1rem;
+  }
+  &__Moisturizer {
+    &::before {
+      content: "";
+      background-image: url(../../assets/images/moisturizer.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 0.5;
+      z-index: 0;
+      border-top-left-radius: 40%;
+      border-bottom-left-radius: 40%;
+      height: 85vh;
+      display: flex;
+      margin-top: 5rem;
+    }
+  }
+  &__Toner {
+    &::before {
+      content: "";
+      background-image: url(../../assets/images/toner.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 0.5;
+      z-index: 0;
+      border-top-left-radius: 40%;
+      border-bottom-left-radius: 40%;
+      height: 85vh;
+      display: flex;
+      margin-top: 5rem;
+    }
+  }
+  &__Serum {
+    &::before {
+      content: "";
+      background-image: url(../../assets/images/serum.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 0.5;
+      z-index: 0;
+      border-top-left-radius: 40%;
+      border-bottom-left-radius: 40%;
+      height: 85vh;
+      display: flex;
+      margin-top: 5rem;
+    }
+  }
+  &__Sunscreen {
+    &::before {
+      content: "";
+      background-image: url(../../assets/images/sunscreen.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 0.5;
+      z-index: 0;
+      border-top-left-radius: 40%;
+      border-bottom-left-radius: 40%;
+      height: 85vh;
+      display: flex;
+      margin-top: 5rem;
+    }
+  }
+  &__rotateLabel {
+    position: relative;
+  }
+  &__rotateLabel h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(90deg);
+    transform-origin: center;
+  }
+  &__categoryLabel {
+    position: absolute;
+    padding-bottom: 16rem;
+    padding-left: 27rem;
+    font-family: "Prata";
+    font-size: 1.7rem;
+    color: $gG-blue;
+  }
+  &__label {
+    font-style: italic;
+  }
+  &__content {
+    font-size: 1.2rem;
+  }
+}
+.sizesEl {
+  padding-top: 0.5rem;
+  background-color: $gG-beige;
+  width: 100vw;
+
+  &__container {
+    position: relative;
+    width: 70%;
+    font-family: "ApercuMedium";
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5rem;
+    margin-left: 6rem;
+
+    &::before {
+      content: "";
+      background-image: url(../../assets/images/bg3.avif);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 0.6;
+      border-top-left-radius: 8rem;
+      border-bottom-right-radius: 8rem;
+      z-index: 0;
+    }
+  }
+  &__text {
+    position: relative;
+    z-index: 1;
+    padding: 1.25rem;
+    color: $gG-blue;
+    font-size: 1rem;
+    color: $gG-blue;
+    flex-grow: 1;
+    border: 2px solid burlywood;
+    border-top-right-radius: 3rem;
+    border-bottom-left-radius: 3rem;
+    margin-bottom: 1.2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(1px);
+  }
+}

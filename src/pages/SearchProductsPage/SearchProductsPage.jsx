@@ -5,7 +5,6 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import categoryIcon from "../../assets/icons/skincare.png";
 import rightArrow from "../../assets/icons/right-arrow.png";
-import search from "../../assets/icons/search.svg";
 import heart from "../../assets/icons/heart.svg";
 import { TextField, Box } from "@mui/material";
 
