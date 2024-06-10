@@ -22,6 +22,21 @@ function ProductDetails() {
 
   const postUserProducts = async () => {
     try {
+      const existingProducts = await axios.get(`${baseUrl}/userProducts`);
+      const existingProductIds = [
+        ...new Set(existingProducts.data.map((product) => product.product_id)),
+      ];
+      console.log("Existing product IDs:", existingProductIds);
+
+      if (existingProductIds.includes(parseInt(id))) {
+        console.log("Product already in collection. Skipping post operation.");
+        alert("Product already in collection!")
+        return;
+      } else {
+        console.log(
+          "Product not found in collection. Proceeding with post operation."
+        );
+      }
       const data = {
         productId: id,
         openDate: null,

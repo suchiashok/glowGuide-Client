@@ -35,29 +35,39 @@ function SwiperComp() {
         className="container__swiperCon"
       >
         <SwiperSlide className="container__swiperEach">
-          <div className="container__swiperContent">
-            <h4>Add Your Products -</h4>
-            <p>Curate your skincare collection effortlessly</p>
-          </div>
+          <Link className="container__links" to="/userProducts">
+            <div className="container__swiperContent">
+              <h4 className="container__swiperTitle">Your Products -</h4>
+              <p className="container__swiperPara">
+                View and update your Collection
+              </p>
+            </div>
+          </Link>
         </SwiperSlide>
         <SwiperSlide className="container__swiperEach">
-        <Link className="container__links" to='/products'>
-          <div className="container__swiperContent">
-            <h4>Find Your Favorites -</h4>
-            <p>Delve into a treasure trove of top-rated skincare essentials</p>
-          </div>
+          <Link className="container__links" to="/products">
+            <div className="container__swiperContent">
+              <h4 className="container__swiperTitle">Find Your Favorites -</h4>
+              <p className="container__swiperPara">
+                Delve into a treasure trove of top-rated skincare essentials
+              </p>
+            </div>
           </Link>
         </SwiperSlide>
         <SwiperSlide className="container__swiperEach">
           <div className="container__swiperContent">
-            <h4>Today's Routine -</h4>
-            <p>Your personalized morning and night skincare rituals</p>
+            <h4 className="container__swiperTitle">Today's Routine -</h4>
+            <p className="container__swiperPara">
+              Your personalized morning and night skincare rituals
+            </p>
           </div>
         </SwiperSlide>
         <SwiperSlide className="container__swiperEach">
           <div className="container__swiperContent">
-            <h4>Glow Goals Wishlist -</h4>
-            <p>Capture your skincare dreams</p>
+            <h4 className="container__swiperTitle">Glow Goals Wishlist -</h4>
+            <p className="container__swiperPara">
+              Capture your skincare dreams
+            </p>
           </div>
         </SwiperSlide>
         {/* <div className="container__sliderController">

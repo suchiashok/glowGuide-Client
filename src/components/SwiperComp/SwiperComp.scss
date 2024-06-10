@@ -39,6 +39,7 @@
   &__title {
     font-family: $font-header;
     color: $gG-blue;
+    font-weight: bolder;
     font-size: 1.4rem;
     text-align: center;
     margin-bottom: 2.5rem;
@@ -74,6 +75,20 @@
     right: 4rem;
     bottom: 7rem;
     justify-content: center;
+  }
+  &__swiperTitle {
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   padding-bottom: 0.5rem;
+   font-family: "Prata";
+  }
+  &__swiperPara {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-style: italic;
+    font-family: "ApercuMedium";
   }
   &__links {
     text-decoration: none;
