@@ -6,15 +6,28 @@
   margin-top: -5.5rem;
   position: relative;
   z-index: 0;
-  height: 100vh;
+  height: 100%;
   background-color: $gG-lightBeige;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
   display: flex;
   flex-direction: column;
 
-  &__morning, &__evening {
-    margin-top: 3rem;
+  &__morning,
+  &__evening {
+    display: flex;
+    margin-top: 4rem;
+  }
+  &__morning {
+    margin-left: 5rem;
+  }
+  &__evening {
+    justify-content: flex-end;
+    margin-right: 5rem;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+  }
+  &__prodCard {
     position: relative;
     width: 50%;
     font-family: "ApercuMedium";
@@ -39,21 +52,31 @@
       border-bottom-left-radius: 8rem;
       z-index: 0;
     }
+  }
+  &__prod {
+    position: relative;
+    z-index: 1;
+    padding: 1.25rem;
+    color: $gG-blue;
+    font-size: 1rem;
+    color: $gG-blue;
+    flex-grow: 1;
+    border: 2px solid burlywood;
+    border-top-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    margin-bottom: 1.2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(1px);
+  }
 
-    &__prod {
-      position: relative;
-      z-index: 1;
-      padding: 1.25rem;
-      color: $gG-blue;
-      font-size: 1rem;
-      color: $gG-blue;
-      flex-grow: 1;
-      border: 2px solid burlywood;
-      border-top-left-radius: 3rem;
-      border-bottom-right-radius: 3rem;
-      margin-bottom: 1.2rem;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
-      backdrop-filter: blur(1px);
-    }
+  &__prodLabel {
+    font-style: italic;
+    font-size: 0.9rem;
+  }
+  &__title {
+    padding-bottom: 1rem;
+    font-family: "ApercuMedium";
+    font-size: 1.2rem;
+    font-style: italic;
   }
 }

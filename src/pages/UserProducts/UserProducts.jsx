@@ -176,7 +176,7 @@ function UserProducts() {
                   <div className="userProducts__content">
                     <p className="userProducts__subHeading">Expiring in</p>
                     <p className="userProducts__value">
-                      {product.expiration_months}
+                      {product.expiration_months} months
                     </p>
                   </div>
                 )}

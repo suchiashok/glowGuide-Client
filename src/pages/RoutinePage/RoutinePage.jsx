@@ -45,8 +45,9 @@ function RoutinePage() {
       <div className="routine">
         <div className="routine__morning">
           <div className="routine__prodCard">
+            <p className="routine__title">Morning Routine</p>
             <div className="routine__prod">
-              <p className="routine__prodLabel">Morning Moisturizer:</p>
+              <p className="routine__prodLabel">Moisturizer:</p>
               {morningMoisturizer && (
                 <p className="routine__prodContent">
                   {morningMoisturizer.product_name}
@@ -54,7 +55,7 @@ function RoutinePage() {
               )}
             </div>
             <div className="routine__prod">
-              <p className="routine__prodLabel">Morning Serum:</p>
+              <p className="routine__prodLabel">Serum:</p>
               {morningSerum && (
                 <p className="routine__prodContent">
                   {morningSerum.product_name}
@@ -62,7 +63,7 @@ function RoutinePage() {
               )}
             </div>
             <div className="routine__prod">
-              <p className="routine__prodLabel">Morning Toner:</p>
+              <p className="routine__prodLabel">Toner:</p>
               {morningToner && (
                 <p className="routine__prodContent">
                   {morningToner.product_name}
@@ -73,8 +74,9 @@ function RoutinePage() {
         </div>
         <div className="routine__evening">
           <div className="routine__prodCard">
+            <p className="routine__title">Night Routine</p>
             <div className="routine__prod">
-              <p className="routine__prodLabel">Night Moisturizer:</p>
+              <p className="routine__prodLabel">Moisturizer:</p>
               {eveningMoisturizer && (
                 <p className="routine__prodContent">
                   {eveningMoisturizer.product_name}
@@ -82,7 +84,7 @@ function RoutinePage() {
               )}
             </div>
             <div className="routine__prod">
-              <p className="routine__prodLabel">Night Serum:</p>
+              <p className="routine__prodLabel">Serum:</p>
               {eveningSerum && (
                 <p className="routine__prodContent">
                   {eveningSerum.product_name}
@@ -90,7 +92,7 @@ function RoutinePage() {
               )}
             </div>
             <div className="routine__prod">
-              <p className="routine__prodLabel">Night Toner:</p>
+              <p className="routine__prodLabel">Toner:</p>
               {eveningToner && (
                 <p className="routine__prodContent">
                   {eveningToner.product_name}
