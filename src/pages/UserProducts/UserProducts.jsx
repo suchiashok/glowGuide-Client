@@ -100,7 +100,6 @@ function UserProducts() {
           return product.product_category === selectedCategory;
         });
 
-
   return (
     <>
       <HeaderWhite />
