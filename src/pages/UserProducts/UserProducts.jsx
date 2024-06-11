@@ -13,13 +13,13 @@ function UserProducts() {
   const [expirationMonths, setExpirationMonths] = useState("");
   const baseUrl = import.meta.env.VITE_BASE_URL;
 
-  const parseDate = (dateString) => {
-    const parts = dateString.split("/");
-    const year = parts[2];
-    const month = parts[0];
-    const day = parts[1];
-    return `${year}-${month}-${day}`;
-  };
+  // const parseDate = (dateString) => {
+  //   const parts = dateString.split("/");
+  //   const year = parts[2];
+  //   const month = parts[0];
+  //   const day = parts[1];
+  //   return `${month}/${day}/${year}`;
+  // };
 
   const getUserProducts = async () => {
     try {
@@ -27,7 +27,7 @@ function UserProducts() {
       if (response && response.data) {
         const parsedData = response.data.map((product) => ({
           ...product,
-          open_date: product.open_date ? parseDate(product.open_date) : null,
+          open_date: product.open_date ? product.open_date : null,
         }));
         setUserProduct(parsedData);
       } else {
@@ -100,6 +100,7 @@ function UserProducts() {
           return product.product_category === selectedCategory;
         });
 
+
   return (
     <>
       <HeaderWhite />
@@ -168,7 +169,7 @@ function UserProducts() {
                   <div className="userProducts__content">
                     <p className="userProducts__subHeading">Opened on</p>
                     <p className="userProducts__value">
-                      {format(parseISO(product.open_date), "yyyy-MM-dd")}
+                      {format(parseISO(product.open_date), "MM/dd/yyyy")}
                     </p>
                   </div>
                 )}
