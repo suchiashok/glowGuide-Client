@@ -6,7 +6,6 @@ import axios from "axios";
 import categoryIcon from "../../assets/icons/skincare.png";
 import rightArrow from "../../assets/icons/right-arrow.png";
 import heart from "../../assets/icons/heart.svg";
-import { TextField, Box } from "@mui/material";
 
 function SearchProductsPage() {
   const [selectedCategory, setSelectedCategory] = useState("all");
@@ -99,22 +98,6 @@ function SearchProductsPage() {
           >
             Sunscreen
           </button>
-        </div>
-        <div className="search">
-          <Box
-            component="form"
-            sx={{
-              "& > :not(style)": { m: 1, width: "60ch" },
-            }}
-            noValidate
-            autoComplete="on"
-          >
-            <TextField
-              id="outlined-basic"
-              label="Search for your skincare favorites here!"
-              variant="outlined"
-            />
-          </Box>
         </div>
         <section className="cardsAndAboutEl">
           {selectedCategory === "all" && (

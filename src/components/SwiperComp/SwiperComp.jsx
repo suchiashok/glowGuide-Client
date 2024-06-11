@@ -55,12 +55,14 @@ function SwiperComp() {
           </Link>
         </SwiperSlide>
         <SwiperSlide className="container__swiperEach">
-          <div className="container__swiperContent">
-            <h4 className="container__swiperTitle">Today's Routine -</h4>
-            <p className="container__swiperPara">
-              Your personalized morning and night skincare rituals
-            </p>
-          </div>
+          <Link className="container__links" to="/routine">
+            <div className="container__swiperContent">
+              <h4 className="container__swiperTitle">Today's Routine -</h4>
+              <p className="container__swiperPara">
+                Your personalized morning and night skincare rituals
+              </p>
+            </div>
+          </Link>
         </SwiperSlide>
         <SwiperSlide className="container__swiperEach">
           <div className="container__swiperContent">

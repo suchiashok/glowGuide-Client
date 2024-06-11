@@ -2,7 +2,7 @@ import "./ProductDetails.scss";
 import { useParams } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import Header from "../../components/Header/Header";
+import HeaderWhite from "../../components/HeaderWhite/HeaderWhite";
 import addProduct from "../../assets/icons/addProduct.png";
 
 function ProductDetails() {
@@ -59,7 +59,7 @@ function ProductDetails() {
 
   return (
     <>
-      <Header />
+      <HeaderWhite />
       <section class="indProduct">
         <button className="indProduct__button" onClick={postUserProducts}>
           Got this? Add to your Collection!
@@ -70,7 +70,7 @@ function ProductDetails() {
           ></img>
         </button>
         <div className="indProduct__section1">
-          <div class="indProduct__container">
+          <div className="indProduct__container">
             <div className="indProduct__indContainer">
               <p className="indProduct__label">Product:</p>
               <h1>{product.product_name}</h1>

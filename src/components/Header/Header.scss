@@ -4,14 +4,16 @@
 
 .header {
   display: flex;
+  z-index: 1;
   img {
     height: 12rem;
     width: 12rem;
     background-color: none;
   }
+
   &__logo {
     margin-left: 1.3rem;
-    z-index:-2;
+    z-index: -2;
   }
   &__navOptionEl {
     img {

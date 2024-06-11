@@ -4,13 +4,20 @@
 
 .header {
   display: flex;
+  z-index: 1;
 img {
   height: 12rem;
   width: 12rem;
-  background-color: none;
+  background-color: transparent;
 }
 &__logo {
   margin-left: 1.3rem;
+    z-index: 1; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+ 
 }
   &__navOptionEl {
     img {
