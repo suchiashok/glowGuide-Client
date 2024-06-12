@@ -30,7 +30,7 @@ function Header() {
             ></img>
           </div>
         </NavLink>
-        <NavLink to="/wishlist" className="header__navOptionLink">
+        {/* <NavLink to="/wishlist" className="header__navOptionLink">
           <div className="header__navOptionEl">
             <img
               className="navbar__navOption"
@@ -38,7 +38,7 @@ function Header() {
               alt="wishlist"
             ></img>
           </div>
-        </NavLink>
+        </NavLink> */}
       </div>
     </header>
   );

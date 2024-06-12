@@ -36,6 +36,7 @@ function ProductDetails() {
         console.log(
           "Product not found in collection. Proceeding with post operation."
         );
+        alert("Product added to your collection!")
       }
       const data = {
         productId: id,

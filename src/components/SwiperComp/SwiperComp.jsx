@@ -64,14 +64,14 @@ function SwiperComp() {
             </div>
           </Link>
         </SwiperSlide>
-        <SwiperSlide className="container__swiperEach">
+        {/* <SwiperSlide className="container__swiperEach">
           <div className="container__swiperContent">
             <h4 className="container__swiperTitle">Glow Goals Wishlist -</h4>
             <p className="container__swiperPara">
               Capture your skincare dreams
             </p>
           </div>
-        </SwiperSlide>
+        </SwiperSlide> */}
         {/* <div className="container__sliderController">
           <div className="container__swiperButtonPrev container__sliderArrow">
             <ion-icon name="arrow-back-outline"></ion-icon>

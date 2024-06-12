@@ -35,6 +35,7 @@ function RoutinePage() {
   const morningMoisturizer = getRandomProductByCategory("Moisturizer");
   const morningSerum = getRandomProductByCategory("Serum");
   const morningToner = getRandomProductByCategory("Toner");
+  const morningSunscreen = getRandomProductByCategory("Sunscreen");
   const eveningMoisturizer = getRandomProductByCategory("Moisturizer");
   const eveningSerum = getRandomProductByCategory("Serum");
   const eveningToner = getRandomProductByCategory("Toner");
@@ -67,6 +68,14 @@ function RoutinePage() {
               {morningToner && (
                 <p className="routine__prodContent">
                   {morningToner.product_name}
+                </p>
+              )}
+            </div>
+            <div className="routine__prod">
+              <p className="routine__prodLabel">Sunscreen:</p>
+              {morningToner && (
+                <p className="routine__prodContent">
+                  {morningSunscreen.product_name}
                 </p>
               )}
             </div>

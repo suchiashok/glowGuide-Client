@@ -11,7 +11,9 @@
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  gap: 3rem;
+  padding-bottom: 4rem;
 
   &__morning,
   &__evening {
@@ -20,12 +22,12 @@
   }
   &__morning {
     margin-left: 5rem;
+    flex-grow: 1;
   }
   &__evening {
     justify-content: flex-end;
+    flex-grow: 1;
     margin-right: 5rem;
-    margin-top: 6rem;
-    margin-bottom: 6rem;
   }
   &__prodCard {
     position: relative;
@@ -35,6 +37,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex-grow: 1;
 
     &::before {
       content: "";

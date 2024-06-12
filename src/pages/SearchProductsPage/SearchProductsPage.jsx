@@ -277,7 +277,7 @@ function SearchProductsPage() {
                     <p className="card__categoryValue">{product.category}</p>
                   </div>
                 ) : null}
-                <img className="card__heart" src={heart} alt="heart-icon"></img>
+                {/* <img className="card__heart" src={heart} alt="heart-icon"></img> */}
                 <div className="card__buttonEl">
                   <button
                     className="card__button"
