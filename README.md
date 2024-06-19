@@ -38,6 +38,8 @@ _Requires node and npm_
   ```
   # From inside the repo directory:
   npm install
+  npm i swiper
+  npm install @mui/material @emotion/react @emotion/styled
   ```
 - Start the app:
   ```
