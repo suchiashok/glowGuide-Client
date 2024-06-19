@@ -1,10 +1,6 @@
-## Project Title
+## Glow Guide - Where glow glows becomes reality
 
-Glow Guide - Where glow glows becomes reality
-
-## Overview
-
-Glow Guide is an innovative skincare diary app designed to help users achieve their skincare goals by providing personalized routines and product management.
+Glow Guide is a skincare diary app designed to help users achieve their skincare goals by providing personalized routines and product management.
 
 ### Problem
 
