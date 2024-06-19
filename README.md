@@ -22,7 +22,8 @@ Glow Guide addresses these challenges by providing a comprehensive solution for 
 ### Tech Stack
 
 - Client libraries:
-  - React
+  - React.js
+  - Scss
   - Material UI
   - SwiperJS
   - react-router
