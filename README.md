@@ -28,3 +28,19 @@ Glow Guide addresses these challenges by providing a comprehensive solution for 
   - SwiperJS
   - react-router
   - axios
+
+### Developing
+
+_Requires node and npm_
+
+- Download or clone this repo.
+- Install dependencies:
+  ```
+  # From inside the repo directory:
+  npm install
+  ```
+- Start the app:
+  ```
+  npm run dev
+  ```
+- The app will be running on `http://localhost:8080`
