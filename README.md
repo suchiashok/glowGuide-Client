@@ -44,3 +44,5 @@ _Requires node and npm_
 - Download or clone the server repo - https://github.com/suchiashok/glowGuide-Server
 
 ### Video 
+
+https://github.com/suchiashok/glowGuide-Client/blob/main/src/assets/demo_video/glowGuide__Demo.mov
