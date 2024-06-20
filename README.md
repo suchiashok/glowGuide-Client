@@ -45,4 +45,6 @@ _Requires node and npm_
 
 ### Video 
 
-https://github.com/suchiashok/glowGuide-Client/blob/main/src/assets/demo_video/glowGuide__Demo.mp4
+## 🍿 Video
+
+[Glow Guide Demo](https://raw.githubusercontent.com/suchiashok/glowGuide-Client/main/src/assets/demo_video/glowGuide__Demo.mp4)
