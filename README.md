@@ -41,7 +41,7 @@ _Requires node and npm_
   ```
   npm run dev
   ```
-- Download or clone the server repo - https://github.com/suchiashok/glowGuide-Server
+- Please note that the server repository is required for product information. Download or clone the server repo [here](https://github.com/suchiashok/glowGuide-Server).
 
 ## Video
 
