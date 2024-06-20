@@ -41,5 +41,7 @@ _Requires node and npm_
   ```
   npm run dev
   ```
-- The app will be running on `http://localhost:8080`
 - Download or clone the server repo - https://github.com/suchiashok/glowGuide-Server
+
+### Video 
+
