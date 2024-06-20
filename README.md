@@ -44,8 +44,3 @@ _Requires node and npm_
 - Download or clone the server repo - https://github.com/suchiashok/glowGuide-Server
 
 ## Video
-
-<video width="320" height="240" controls>
-  <source src="https://raw.githubusercontent.com/suchiashok/glowGuide-Client/main/src/assets/demo_video/glowGuide__Demo.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
